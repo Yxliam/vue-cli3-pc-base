@@ -10,9 +10,11 @@
     "dependencies": {
         "animate.css": "^3.7.0",
         "axios": "^0.18.0",
+        "compression-webpack-plugin": "^2.0.0",
         "dayjs": "^1.7.7",
         "number-precision": "^1.2.1",
         "tween.js": "^16.6.0",
+        "uglifyjs-webpack-plugin": "^2.1.2",
         "vconsole": "^3.2.0",
         "vue": "^2.5.17",
         "vue-i18n": "^8.3.2",
