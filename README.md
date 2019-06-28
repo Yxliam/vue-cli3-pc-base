@@ -19,7 +19,7 @@ yarn build
 yarn analyz
 
 提交代码
-yarn push
+yarn push npm run push 记得权限chmod 755 push.sh
 ```
 
 ## 项目结构
