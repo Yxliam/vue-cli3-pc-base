@@ -78,20 +78,7 @@ module.exports = {
                 externals: externals
             })
             // 上线压缩去除console等信息
-            config.plugins.push(
-                new UglifyJsPlugin({
-                    uglifyOptions: {
-                        compress: {
-                            warnings: false,
-                            drop_console: true,
-                            drop_debugger: false,
-                            pure_funcs: ['console.log'] // 移除console
-                        }
-                    },
-                    sourceMap: false,
-                    parallel: true
-                })
-            )
+            config.optimization.minimizer[0].options.terserOptions.compress.drop_console = true
             // 开启gzip压缩
             const productionGzipExtensions = /\.(js|css|json|txt|html|ico|svg)(\?.*)?$/i
             config.plugins.push(
